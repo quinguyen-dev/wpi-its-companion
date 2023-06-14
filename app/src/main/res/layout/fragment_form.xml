@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:padding="@dimen/default_screen_padding">
+
+        <TextView
+            android:id="@+id/submit_a_request_label"
+            style="@style/heading_1"
+            android:text="@string/submit_a_request"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_label"
+            style="@style/body"
+            android:layout_marginTop="@dimen/frame_spacing"
+            android:labelFor="@+id/full_name"
+            android:text="@string/what_is_your_full_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submit_a_request_label" />
+
+        <EditText
+            android:id="@+id/full_name"
+            style="@style/text_field"
+            android:layout_marginTop="6dp"
+            android:autofillHints=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_label" />
+
+        <TextView
+            android:id="@+id/wpi_email_label"
+            style="@style/body"
+            android:layout_marginTop="@dimen/frame_spacing"
+            android:labelFor="@+id/email"
+            android:text="@string/wpi_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/full_name" />
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/text_field"
+            android:layout_marginTop="6dp"
+            android:autofillHints=""
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wpi_email_label" />
+
+        <TextView
+            android:id="@+id/id_label"
+            style="@style/body"
+            android:layout_marginTop="@dimen/frame_spacing"
+            android:labelFor="@+id/id"
+            android:text="@string/wpi_id_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <EditText
+            android:id="@+id/id"
+            style="@style/text_field"
+            android:layout_marginTop="6dp"
+            android:autofillHints=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_label" />
+
+        <TextView
+            android:id="@+id/contact_email_label"
+            style="@style/body"
+            android:layout_marginTop="@dimen/frame_spacing"
+            android:labelFor="@+id/contact_email"
+            android:text="@string/at_which_email_address_should_we_contact_you"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id" />
+
+        <EditText
+            android:id="@+id/contact_email"
+            style="@style/text_field"
+            android:layout_marginTop="6dp"
+            android:autofillHints=""
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contact_email_label" />
+
+        <TextView
+            android:id="@+id/contact_phone_label"
+            style="@style/body"
+            android:layout_marginTop="@dimen/frame_spacing"
+            android:labelFor="@+id/contact_phone"
+            android:text="@string/what_is_your_preferred_contact_phone_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contact_email" />
+
+        <EditText
+            android:id="@+id/contact_phone"
+            style="@style/text_field"
+            android:layout_marginTop="6dp"
+            android:autofillHints=""
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contact_phone_label" />
+
+        <TextView
+            android:id="@+id/description_label"
+            style="@style/body"
+            android:layout_marginTop="@dimen/frame_spacing"
+            android:labelFor="@+id/description"
+            android:text="@string/in_detail_describe_your_request_or_issue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contact_phone" />
+
+        <EditText
+            android:id="@+id/description"
+            style="@style/text_field"
+            android:layout_height="256dp"
+            android:layout_marginTop="6dp"
+            android:autofillHints=""
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:paddingVertical="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_label" />
+
+        <TextView
+            android:id="@+id/description_subtext"
+            style="@style/subtitle_1"
+            android:layout_marginTop="@dimen/frame_spacing"
+            android:labelFor="@+id/description"
+            android:text="@string/description_subtext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/frame_spacing"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_subtext">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/attach_image"
+                style="@style/button_camera_icon" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit"
+                style="@style/button_primary"
+                android:layout_width="match_parent"
+                android:layout_marginStart="8dp"
+                android:text="@string/request_help" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

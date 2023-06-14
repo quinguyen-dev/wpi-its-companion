@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background"
+        android:padding="@dimen/default_screen_padding">
+
+        <TextView
+            android:id="@+id/suggestion_label"
+            style="@style/heading_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/here_are_some_suggestions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/result_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/suggestion_label">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/frame_spacing"
+                android:indeterminate="true"
+                android:theme="@style/progress_bar"
+                app:layout_constraintStart_toStartOf="@+id/suggestion_label"
+                app:layout_constraintTop_toBottomOf="@+id/suggestion_label" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/suggested_articles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/suggestion_label" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tried_label"
+            style="@style/heading_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/frame_spacing"
+            android:text="@string/did_these_articles_resolve_your_issue"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/result_container" />
+
+        <LinearLayout
+            android:id="@+id/button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tried_label">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/no"
+                style="@style/button_secondary"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="@string/no" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/yes"
+                style="@style/button_primary"
+                android:layout_weight="1"
+                android:text="@string/yes" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/submit_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/frame_spacing"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/button_container">
+
+            <TextView
+                android:id="@+id/description_label"
+                style="@style/heading_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/description"
+                android:text="@string/please_further_detail_your_issue_based_on_the_attempts_with_the_given_articles"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/description"
+                style="@style/text_field"
+                android:layout_height="256dp"
+                android:layout_marginTop="6dp"
+                android:autofillHints=""
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingVertical="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description_label" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit_to_its"
+                style="@style/button_primary"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/frame_spacing"
+                android:text="@string/submit_request_to_wpi_its"
+                app:layout_constraintTop_toBottomOf="@+id/description" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

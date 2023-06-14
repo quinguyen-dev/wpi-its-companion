@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ================================= Standard ================================= -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey_1">#33383B</color>
+    <color name="grey_2">#B1B7BB</color>
+    <color name="grey_3">#E7E7E7</color>
+
+
+    <!-- ================================= Primary ================================= -->
+    <color name="primary_white">#F1F1F1</color>
+    <color name="primary_back">#1F1F1F</color>
+    <color name="primary_red">#BC1632</color>
+
+    <!-- ================================ Components ================================ -->
+    <color name="background">@color/white</color>
+    <color name="input_border">#E7E7E7</color>
+    <color name="article_border">#E7E7E7</color>
+</resources>

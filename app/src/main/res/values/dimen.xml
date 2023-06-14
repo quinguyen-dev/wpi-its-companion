@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ================================= Screen ================================= -->
+    <dimen name="default_screen_padding">24dp</dimen>
+    <dimen name="login_screen_h_padding">24dp</dimen>
+    <dimen name="login_screen_v_padding">24dp</dimen>
+    <dimen name="frame_spacing">12dp</dimen>
+
+    <!-- ================================= Buttons ================================= -->
+    <dimen name="button_height">54dp</dimen>
+
+    <!-- ================================== Text ================================== -->
+    <dimen name="heading_1_text_size">22sp</dimen>
+    <dimen name="heading_2_text_size">18sp</dimen>
+    <dimen name="body_text_size">16sp</dimen>
+    <dimen name="subtitle_1_text_size">14sp</dimen>
+    <dimen name="subtitle_2_text_size">12sp</dimen>
+</resources>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">InTro_companion</string>
+    <!-- ================================= Login Page ================================= -->
+    <string name="log_in_via_sso">Log in via SSO</string>
+    <string name="continue_as_a_default_customer">Continue as a default customer</string>
+
+    <!-- ============================= Content Descriptions ============================= -->
+    <string name="cd_intro_logo">WPI Intro Logo</string>
+
+    <!-- ================================ Home Page Text ================================ -->
+    <string name="your_active_tickets">Your Active Tickets</string>
+    <string name="your_previous_tickets">Your Previous Tickets</string>
+    <string name="start_a_new_ticket">Start a new ticket</string>
+
+    <!-- ================================ Form Page Text ================================ -->
+    <string name="submit_a_request">Submit a Request</string>
+    <string name="what_is_your_full_name">What is your full name? <font color='#FF0000'>*</font></string>
+    <string name="wpi_email">WPI Email</string>
+    <string name="wpi_id_number">WPI ID Number</string>
+    <string name="at_which_email_address_should_we_contact_you">At which email address should we contact you? <font color='#FF0000'>*</font></string>
+    <string name="what_is_your_preferred_contact_phone_number">What is your preferred contact phone number?</string>
+    <string name="this_issue_impacts">This issue impacts</string>
+    <string name="in_detail_describe_your_request_or_issue">In detail, describe your request or issue <font color='#FF0000'>*</font></string>
+    <string name="request_help">Request help</string>
+    <string name="attach_an_image">Attach an image</string>
+    <string name="description_subtext">If you would like to attach an image, please do so by clicking the camera icon below. We will initially provide potential solutions before allowing you to submit the request.
+ </string>
+    <string name="required_asterisk"><![CDATA[<font color=\'#cc0029\'>&nbsp*</font>]]></string>
+
+    <!-- ================================ Suggestions ================================ -->
+    <string name="here_are_some_suggestions">Here are some suggestions:</string>
+    <string name="here_are_some_suggestions_vpn">Here are some suggestions:\n You will need the VPN to continue</string>
+    <string name="have_you_already_tried_these">Have you already tried these?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="still_having_trouble">Still having troubles?</string>
+    <string name="submit_request_to_wpi_its">Submit request to WPI ITS</string>
+    <string name="did_these_articles_resolve_your_issue">Did these articles resolve your issue?</string>
+
+    <!-- ================================ Return Text ================================ -->
+    <string name="it_thanks">We are glad that the articles worked! If you have further questions, please contact us again through the app or visit us at Gordon Library on weekdays 8am-8pm.</string>
+    <string name="submit_another_request">Submit another request</string>
+    <string name="please_further_detail_your_issue_based_on_the_attempts_with_the_given_articles">Please further detail your issue based on the attempts with the given articles</string>
+    <string name="confirm_description">We are sorry that the articles did not help. Your request has been submitted and will be processed by an IT Specialist during normal work hours. If you would like, you are also able to call us using the button below.</string>
+    <string name="call_wpi_its">Call WPI ITS</string>
+    <string name="submit_a_request_to_its">Submit a request to ITS</string>
+    <string name="return_to_home">Return to home</string>
+    <string name="ticket_information">Ticket Information</string>
+    <string name="full_name">Full name</string>
+    <string name="ticket_id_number">Ticket ID Number</string>
+    <string name="submitted_date">Submitted Date</string>
+    <string name="classification">Classification</string>
+    <string name="location_information">Location Information</string>
+    <string name="description">Description</string>
+</resources>
